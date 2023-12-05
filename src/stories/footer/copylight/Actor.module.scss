@@ -1,0 +1,25 @@
+@use "../Footer";
+
+.storybookActor {
+  position: relative;
+  color: Footer.$footer-text-color;
+  text-decoration: none;
+  margin: auto 5px;
+
+  &::after {
+    content: close-quote;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 3px;
+    background: Footer.$footer-text-color;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: all 500ms 0ms;
+  }
+
+  &:hover::after {
+    transform: scaleX(1);
+  }
+}
