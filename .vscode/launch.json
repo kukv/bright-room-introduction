@@ -1,0 +1,35 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "dev",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "npm run dev"
+    },
+    {
+      "name": "build",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "npm run build"
+    },
+    {
+      "name": "tsm",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "npm run tsm"
+    },
+    {
+      "name": "format",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "npm run format"
+    },
+    {
+      "name": "storybook",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "npm run storybook"
+    }
+  ]
+}

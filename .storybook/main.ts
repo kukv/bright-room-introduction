@@ -5,7 +5,6 @@ const config: StorybookConfig = {
   addons: [
     '@storybook/addon-links',
     '@storybook/addon-essentials',
-    '@storybook/addon-onboarding',
     '@storybook/addon-interactions',
   ],
   staticDirs: ['../public'], // publicな静的コンテンツを認識させるために設定

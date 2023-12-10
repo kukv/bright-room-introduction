@@ -1,0 +1,39 @@
+{
+  "v": 4,
+  "entries": {
+    "footer-copylight--docs": {
+      "id": "footer-copylight--docs",
+      "title": "Footer/CopyLight",
+      "name": "Docs",
+      "importPath": "./src/components/organisms/Footer/CopyLight.stories.ts",
+      "type": "docs",
+      "tags": ["autodocs", "docs"],
+      "storiesImports": []
+    },
+    "footer-copylight--template": {
+      "type": "story",
+      "id": "footer-copylight--template",
+      "name": "Template",
+      "title": "Footer/CopyLight",
+      "importPath": "./src/components/organisms/Footer/CopyLight.stories.ts",
+      "tags": ["autodocs", "story"]
+    },
+    "social-x--docs": {
+      "id": "social-x--docs",
+      "title": "Social/X",
+      "name": "Docs",
+      "importPath": "./src/components/organisms/social/X.stories.ts",
+      "type": "docs",
+      "tags": ["autodocs", "docs"],
+      "storiesImports": []
+    },
+    "social-x--template": {
+      "type": "story",
+      "id": "social-x--template",
+      "name": "Template",
+      "title": "Social/X",
+      "importPath": "./src/components/organisms/social/X.stories.ts",
+      "tags": ["autodocs", "story"]
+    }
+  }
+}

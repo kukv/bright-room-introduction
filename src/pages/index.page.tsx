@@ -1,5 +1,12 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+  faSquareXTwitter,
+  faXTwitter,
+} from '@fortawesome/free-brands-svg-icons'
+import styles from './index.page.module.scss'
+import { faX } from '@fortawesome/free-solid-svg-icons'
 
 const inter = Inter({ subsets: ['latin'] })
 

@@ -1,0 +1,9 @@
+.storybookSocial {
+  --fa-animation-duration: 0s;
+  --fa-beat-scale: 0;
+
+  &:hover {
+    --fa-animation-duration: 1s;
+    --fa-beat-scale: 1.2;
+  }
+}
