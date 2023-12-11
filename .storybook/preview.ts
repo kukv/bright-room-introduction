@@ -1,4 +1,5 @@
 import type { Preview } from '@storybook/react'
+import '../src/styles/global.scss'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 

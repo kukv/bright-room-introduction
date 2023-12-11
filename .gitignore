@@ -13,11 +13,13 @@
 /.next/
 /out/
 /dist/
+/storybook-static/
 
 # production
 /build
 
 # misc
+/.idea/
 .DS_Store
 *.pem
 
