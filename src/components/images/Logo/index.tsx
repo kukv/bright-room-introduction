@@ -1,4 +1,5 @@
-const dir = process.env.BACKEND_URL
+import Image from 'next/image'
+import LogoImage from 'public/logo.png'
 
 const Size = {
   small: 'small',
@@ -29,5 +30,5 @@ interface LogoProps {
 export const Logo = ({ size, className, ...props }: LogoProps) => {
   const classes = buildStyleClass(size, className)
 
-  return <img src={`${dir}/logo.png`} className={classes} alt="Logo" />
+  return <Image src={LogoImage} className={classes} alt="Logo" />
 }

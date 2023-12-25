@@ -1,4 +1,5 @@
-const dir = process.env.BACKEND_URL
+import Image from 'next/image'
+import AboutProfileImage from 'public/about-profileImage.png'
 
 interface ProfileImageProps {
   className?: string
@@ -6,8 +7,8 @@ interface ProfileImageProps {
 
 export const ProfileImage = ({ className, ...props }: ProfileImageProps) => {
   return (
-    <img
-      src={`${dir}/about-profileImage.png`}
+    <Image
+      src={AboutProfileImage}
       className={`h-40 w-40 rounded-full ${className}`}
       alt="Logo"
     />
