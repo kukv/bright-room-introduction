@@ -38,7 +38,7 @@ export const Resume = ({ ...props }: ResumeProps) => {
                   <span className={styles.time_month}>May</span>
                 </div>
                 <div className={styles.desc}>
-                  <p className={styles.flag}>Joined Money Design Inc.</p>
+                  <p className={styles.flag}>Joined ??? Inc.</p>
                   内容
                 </div>
               </div>
@@ -51,7 +51,7 @@ export const Resume = ({ ...props }: ResumeProps) => {
                   <span className={styles.time_month}>Apr</span>
                 </div>
                 <div className={styles.desc}>
-                  <p className={styles.flag}>Joined System Management Inc.</p>
+                  <p className={styles.flag}>Joined ??? Inc.</p>
                   内容
                 </div>
               </div>
