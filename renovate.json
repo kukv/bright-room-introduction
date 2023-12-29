@@ -1,16 +1,23 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "baseBranches": ["develop"],
   "extends": [
     "config:base",
     ":prHourlyLimitNone",
     ":timezone(Asia/Tokyo)"
   ],
-  "schedule": ["after 9am on monday", "before 12am on monday"],
-  "labels": ["dependencies", "renovate"],
   "dependencyDashboard": true,
   "automerge": false,
-  "minor": {
-    "groupName": "all dependencies"
-  }
+  "prHourlyLimit": 0,
+  "schedule": ["after 9am on monday", "before 12am on monday"],
+  "timezone": "Asia/Tokyo",
+  "baseBranches": ["develop"],
+  "labels": ["dependencies", "renovate"],
+  "rangeStrategy": "bump",
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["patch", "minor"],
+      "excludePackageNames": ["typescript"],
+      "groupName": "minor and patch dependencies"
+    }
+  ]
 }
