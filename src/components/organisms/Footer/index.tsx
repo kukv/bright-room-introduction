@@ -12,7 +12,10 @@ export const Footer = ({ ...props }: FooterProps) => {
         </div>
       </div>
       <div className="w-full bg-neutral-700 p-4 text-center text-neutral-200">
-        <Copyright name="koki nonaka" link="https://github.com/kukv" />
+        <Copyright
+          holderName="koki nonaka"
+          holderWebsiteLink="https://github.com/kukv"
+        />
       </div>
     </footer>
   )
