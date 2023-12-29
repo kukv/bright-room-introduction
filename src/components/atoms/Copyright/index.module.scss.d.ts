@@ -1,5 +1,6 @@
 export type Styles = {
   text_color: string
+  text_margin: string
   underline_hover_animation: string
 }
 

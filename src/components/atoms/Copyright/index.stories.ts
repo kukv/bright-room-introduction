@@ -16,8 +16,8 @@ type Story = StoryObj<typeof meta>
 
 export const Template: Story = {
   args: {
-    year: 2023,
-    name: 'koki nonaka',
-    link: 'https://github.com/kukv',
+    publicationYear: 2023,
+    holderName: 'koki nonaka',
+    holderWebsiteLink: 'https://github.com/kukv',
   },
 }
