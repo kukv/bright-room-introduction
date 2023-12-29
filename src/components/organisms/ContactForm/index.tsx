@@ -1,7 +1,6 @@
-import { InputField } from '@/components/atoms/InputField'
 import { SubmitButton } from '@/components/atoms/SubmitButton'
 import { TextAreaField } from '@/components/atoms/TextAreaField'
-import { TextLabel } from '@/components/atoms/TextLabel'
+import { TextField } from '@/components/atoms/TextField'
 
 interface ContactFormProps {}
 
@@ -9,26 +8,23 @@ export const ContactForm = ({ ...props }: ContactFormProps) => {
   return (
     <>
       <div className="mb-8">
-        <TextLabel title="name" />
-        <InputField
-          id="name"
-          type="text"
+        <TextField
+          fieldId="name"
+          fieldName="name"
           placeholder="Full Name"
           required={true}
         />
       </div>
       <div className="mb-8">
-        <TextLabel title="email" />
-        <InputField
-          id="email"
-          type="text"
+        <TextField
+          fieldId="email"
+          fieldName="email"
           placeholder="example@example.com"
           required={true}
         />
       </div>
       <div className="mb-8">
-        <TextLabel title="message" />
-        <TextAreaField id="message" requied={true} />
+        <TextAreaField fieldId="message" fieldName="message" required={true} />
       </div>
       <div className="mb-8">
         <SubmitButton name="Send" />

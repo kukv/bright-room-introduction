@@ -16,6 +16,8 @@ type Story = StoryObj<typeof meta>
 
 export const Template: Story = {
   args: {
-    id: 'example',
+    fieldId: 'example',
+    fieldName: 'example',
+    required: true,
   },
 }

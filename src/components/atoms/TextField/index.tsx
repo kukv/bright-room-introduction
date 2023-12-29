@@ -1,26 +1,29 @@
 import styles from './index.module.scss'
 
-interface TextAreaFieldProps {
+interface TextFieldProps {
   fieldId: string
   fieldName: string
+  placeholder?: string
   required?: boolean
 }
 
-export const TextAreaField = ({
+export const TextField = ({
   fieldId,
   fieldName,
+  placeholder,
   required = false,
-}: TextAreaFieldProps) => {
+}: TextFieldProps) => {
   return (
     <>
       <label htmlFor={fieldName} className={`${styles.text_label}`}>
         {fieldName}
       </label>
-      <textarea
+      <input
+        type="text"
         id={fieldId}
-        rows={4}
+        className={`${styles.text_field}`}
+        placeholder={placeholder}
         required={required}
-        className={`${styles.text_area_field}`}
       />
     </>
   )
