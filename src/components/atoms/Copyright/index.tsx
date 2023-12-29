@@ -10,7 +10,6 @@ export const Copyright = ({
   publicationYear = new Date().getFullYear(),
   holderName,
   holderWebsiteLink,
-  ...props
 }: CopyrightProps) => {
   return (
     <p className={styles.text_color}>
