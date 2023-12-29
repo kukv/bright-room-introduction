@@ -1,4 +1,4 @@
-import { SubmitButton } from '@/components/atoms/SubmitButton'
+import { Button } from 'src/components/atoms/Button'
 import { TextAreaField } from '@/components/atoms/TextAreaField'
 import { TextField } from '@/components/atoms/TextField'
 
@@ -27,7 +27,7 @@ export const ContactForm = ({ ...props }: ContactFormProps) => {
         <TextAreaField fieldId="message" fieldName="message" required={true} />
       </div>
       <div className="mb-8">
-        <SubmitButton name="Send" />
+        <Button displayName="Send" isDisabled={false} action={() => {}} />
       </div>
     </>
   )
