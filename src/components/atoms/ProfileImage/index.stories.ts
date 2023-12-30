@@ -1,15 +1,15 @@
-import { NavigationLogo } from '@/components/molecules/NavigationLogo/index'
 import { Meta, StoryObj } from '@storybook/react'
+import { ProfileImage } from './index'
 
 const meta = {
-  title: 'molecules/NavigationLogo',
-  component: NavigationLogo,
+  title: 'atoms/ProfileImage',
+  component: ProfileImage,
   parameters: {
     layout: 'centered',
   },
   tags: ['autodocs'],
   argTypes: {},
-} satisfies Meta<typeof NavigationLogo>
+} satisfies Meta<typeof ProfileImage>
 
 export default meta
 type Story = StoryObj<typeof meta>

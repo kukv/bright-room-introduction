@@ -1,14 +1,15 @@
+import styles from './index.module.scss'
+
 interface ScreenReaderOnlyTextProps {
-  text: string
+  readerOnlyText: string
 }
 
 export const ScreenReaderOnlyText = ({
-  text,
-  ...props
+  readerOnlyText,
 }: ScreenReaderOnlyTextProps) => {
   return (
     <>
-      <span className="sr-only">{text}</span>
+      <span className={`${styles.sr_only}`}>{readerOnlyText}</span>
     </>
   )
 }

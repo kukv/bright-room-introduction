@@ -19,7 +19,7 @@ const config = {
       },
     },
   ],
-  plugins: ['prettier-plugin-tailwindcss'],
+  plugins: ['prettier-plugin-tailwindcss', 'prettier-plugin-organize-imports'],
   printWidth: 80,
   semi: false,
   singleQuote: true,

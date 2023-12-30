@@ -1,22 +1,22 @@
 import { Meta, StoryObj } from '@storybook/react'
-import { Bar3Icon } from '.'
+import { TextLabel } from '.'
 
 const meta = {
-  title: 'images/Bar3Icon',
-  component: Bar3Icon,
+  title: 'atoms/TextLabel',
+  component: TextLabel,
   parameters: {
     layout: 'centered',
   },
   tags: ['autodocs'],
   argTypes: {},
-} satisfies Meta<typeof Bar3Icon>
+} satisfies Meta<typeof TextLabel>
 
 export default meta
 type Story = StoryObj<typeof meta>
 
 export const Template: Story = {
   args: {
-    className: 'h-6 w-6',
-    ariaHidden: true,
+    labelName: 'example',
+    required: true,
   },
 }

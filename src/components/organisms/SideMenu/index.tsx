@@ -1,6 +1,6 @@
 import { NavigationItem } from '@/components/atoms/NavigationItem'
 import { CloseButton } from '@/components/molecules/CloseButton'
-import { NavigationLogoLogo } from '@/components/molecules/NavigationLogo'
+import { NavigationLogo } from '@/components/molecules/NavigationLogo'
 import { useMobileMenuStore } from '@/stores/MobileMenuStore'
 import { Dialog } from '@headlessui/react'
 
@@ -19,7 +19,7 @@ export const SideMenu = ({ ...props }: SideMenuProps) => {
       <div className="fixed inset-0 z-10" />
       <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
         <div className="flex items-center justify-between">
-          <NavigationLogoLogo text="Bright Room" url="#" size="small" />
+          <NavigationLogo />
           <CloseButton text="Bright Room" action={() => close()} />
         </div>
         <div className="mt-6 flow-root">

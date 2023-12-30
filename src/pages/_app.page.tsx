@@ -1,12 +1,10 @@
 import '@/styles/global.scss'
-import type { AppProps } from 'next/app'
-import { config } from '@fortawesome/fontawesome-svg-core'
+import { config, library } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
-import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import type { NextPage } from 'next'
+import type { AppProps } from 'next/app'
 import Head from 'next/head'
-import Script from 'next/script'
 
 config.autoAddCss = false
 library.add(fab)

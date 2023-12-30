@@ -1,13 +1,6 @@
-interface Bar3IconProps {
-  className: string
-  ariaHidden: boolean
-}
+import styles from './index.module.scss'
 
-export const Bar3Icon = ({
-  className,
-  ariaHidden,
-  ...props
-}: Bar3IconProps) => {
+export const CollapsedMenuIcon = () => {
   return (
     <>
       <svg
@@ -16,8 +9,7 @@ export const Bar3Icon = ({
         viewBox="0 0 24 24"
         strokeWidth={1.5}
         stroke="currentColor"
-        className={className}
-        aria-hidden={ariaHidden}
+        className={` ${styles.icon_size}`}
       >
         <path
           strokeLinecap="round"

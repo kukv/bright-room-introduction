@@ -1,4 +1,4 @@
-import { ProfileImage } from '@/components/images/ProfileImage'
+import { ProfileImage } from '@/components/atoms/ProfileImage'
 
 interface AboutProps {}
 

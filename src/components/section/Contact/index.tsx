@@ -13,10 +13,7 @@ export const Contact = ({ ...props }: ContactProps) => {
             Feel free to contact me for any work or suggestions below.
           </p>
         </div>
-
-        <form className="container px-16 lg:px-36">
-          <ContactForm />
-        </form>
+        <ContactForm />
       </div>
     </section>
   )

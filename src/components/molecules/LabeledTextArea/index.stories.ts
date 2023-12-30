@@ -1,23 +1,24 @@
 import { Meta, StoryObj } from '@storybook/react'
-import { TextField } from '.'
+import { LabeledTextArea } from './index'
 
 const meta = {
-  title: 'atoms/TextField',
-  component: TextField,
+  title: 'molecules/LabeledTextArea',
+  component: LabeledTextArea,
   parameters: {
     layout: 'centered',
   },
   tags: ['autodocs'],
   argTypes: {},
-} satisfies Meta<typeof TextField>
+} satisfies Meta<typeof LabeledTextArea>
 
 export default meta
 type Story = StoryObj<typeof meta>
 
 export const Template: Story = {
   args: {
-    fieldId: 'example',
-    placeholder: 'test',
+    fieldId: 'examples',
+    labelName: 'examples',
+    row: 4,
     required: true,
   },
 }

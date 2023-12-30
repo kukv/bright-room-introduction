@@ -2,26 +2,21 @@ import styles from './index.module.scss'
 
 interface TextAreaFieldProps {
   fieldId: string
-  fieldName: string
+  row?: number
   required?: boolean
 }
 
 export const TextAreaField = ({
   fieldId,
-  fieldName,
+  row = 4,
   required = false,
 }: TextAreaFieldProps) => {
   return (
-    <>
-      <label htmlFor={fieldName} className={`${styles.text_label}`}>
-        {fieldName}
-      </label>
-      <textarea
-        id={fieldId}
-        rows={4}
-        required={required}
-        className={`${styles.text_area_field}`}
-      />
-    </>
+    <textarea
+      id={fieldId}
+      rows={row}
+      required={required}
+      className={`${styles.text_area_field}`}
+    />
   )
 }
