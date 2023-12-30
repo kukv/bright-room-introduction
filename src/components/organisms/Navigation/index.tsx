@@ -1,8 +1,8 @@
 import { NavigationItem } from '@/components/atoms/NavigationItem'
-import { HamburgerButton } from '@/components/molecules/HamburgerButton'
 import { NavigationLogo } from '@/components/molecules/NavigationLogo'
 import { useMobileMenuStore } from '@/stores/MobileMenuStore'
 import { Popover } from '@headlessui/react'
+import { CollapsedMenuButton } from 'src/components/molecules/CollapsedMenuButton'
 
 interface NavigationProps {}
 
@@ -15,7 +15,10 @@ export const Navigation = ({ ...props }: NavigationProps) => {
         <NavigationLogo />
       </div>
       <div className="flex lg:hidden">
-        <HamburgerButton text="Open main menu" action={() => open()} />
+        <CollapsedMenuButton
+          readerOnlyText="Open side menu"
+          action={() => open()}
+        />
       </div>
       <Popover.Group className="hidden lg:flex lg:gap-x-12">
         <NavigationItem title="Home" url="#home" mobile={false} />

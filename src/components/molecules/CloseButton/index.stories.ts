@@ -16,7 +16,7 @@ type Story = StoryObj<typeof meta>
 
 export const Template: Story = {
   args: {
-    text: 'Bright Room',
+    readerOnlyText: 'Bright Room',
     action: () => {},
   },
 }
