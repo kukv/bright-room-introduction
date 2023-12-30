@@ -1,12 +1,4 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import styles from './index.module.scss'
-import { Chart } from 'react-google-charts'
-import {
-  faDatabase,
-  faLaptopCode,
-  faNetworkWired,
-  faServer,
-} from '@fortawesome/free-solid-svg-icons'
 
 interface ResumeProps {}
 

@@ -1,11 +1,17 @@
+import styles from './index.module.scss'
+
 interface TextLabelProps {
-  title: string
+  labelName: string
+  required?: boolean
 }
 
-export const TextLabel = ({ title, ...props }: TextLabelProps) => {
+export const TextLabel = ({ labelName, required = false }: TextLabelProps) => {
   return (
-    <label htmlFor={title} className="mb-2 block text-white">
-      {title}
+    <label
+      htmlFor={labelName}
+      className={`${styles.label_name} ${required ? styles.required_mark : ''}`}
+    >
+      {labelName}
     </label>
   )
 }

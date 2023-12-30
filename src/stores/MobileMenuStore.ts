@@ -1,4 +1,4 @@
-import { create, useStore } from 'zustand'
+import { create } from 'zustand'
 
 type MobileMenuStore = {
   isOpen: boolean

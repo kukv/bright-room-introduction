@@ -1,19 +1,22 @@
+import styles from './index.module.scss'
+
 interface TextAreaFieldProps {
-  id: string
-  requied?: boolean
+  fieldId: string
+  row?: number
+  required?: boolean
 }
 
 export const TextAreaField = ({
-  id,
-  requied = false,
-  ...props
+  fieldId,
+  row = 4,
+  required = false,
 }: TextAreaFieldProps) => {
   return (
     <textarea
-      id={id}
-      rows={4}
-      required={requied}
-      className="block w-full rounded-lg border p-2.5"
+      id={fieldId}
+      rows={row}
+      required={required}
+      className={`${styles.text_area_field}`}
     />
   )
 }

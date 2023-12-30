@@ -1,12 +1,12 @@
 export type Styles = {
-  fadeOutAnime: string
-  fadeUpAnime: string
-  hidden: string
-  stickyNavbar: string
-}
+  fadeOutAnime: string;
+  fadeUpAnime: string;
+  hidden: string;
+  stickyNavbar: string;
+};
 
-export type ClassNames = keyof Styles
+export type ClassNames = keyof Styles;
 
-declare const styles: Styles
+declare const styles: Styles;
 
-export default styles
+export default styles;

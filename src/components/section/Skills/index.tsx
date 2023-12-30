@@ -1,11 +1,9 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
-  faDatabase,
   faLaptopCode,
   faNetworkWired,
-  faScrewdriverWrench,
   faServer,
 } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 interface SkillsProps {}
 

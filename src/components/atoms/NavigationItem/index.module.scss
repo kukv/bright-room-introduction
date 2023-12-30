@@ -1,0 +1,22 @@
+.text_style_default {
+  color: #111827ff;
+  font-weight: 600;
+}
+
+.text_style_pc {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.text_style_mobile {
+  display: block;
+  padding: 8px 12px;
+  margin: 0 12px;
+  line-height: 28px;
+  border-radius: 8px;
+  font-size: 16px;
+
+  &:hover {
+    background-color: #f3f4f6;
+  }
+}

@@ -1,38 +1,37 @@
-import { InputField } from '@/components/atoms/InputField'
-import { SubmitButton } from '@/components/atoms/SubmitButton'
-import { TextAreaField } from '@/components/atoms/TextAreaField'
-import { TextLabel } from '@/components/atoms/TextLabel'
+import { Button } from '@/components/atoms/Button'
+import { LabeledTextArea } from '@/components/molecules/LabeledTextArea'
+import { LabeledTextField } from '@/components/molecules/LabeledTextField'
 
-interface ContactFormProps {}
-
-export const ContactForm = ({ ...props }: ContactFormProps) => {
+export const ContactForm = () => {
   return (
-    <>
+    <form className="container px-16 lg:px-36">
       <div className="mb-8">
-        <TextLabel title="name" />
-        <InputField
-          id="name"
-          type="text"
+        <LabeledTextField
+          fieldId="name"
+          labelName="name"
           placeholder="Full Name"
           required={true}
         />
       </div>
       <div className="mb-8">
-        <TextLabel title="email" />
-        <InputField
-          id="email"
-          type="text"
+        <LabeledTextField
+          fieldId="email"
+          labelName="email"
           placeholder="example@example.com"
           required={true}
         />
       </div>
       <div className="mb-8">
-        <TextLabel title="message" />
-        <TextAreaField id="message" requied={true} />
+        <LabeledTextArea
+          fieldId="message"
+          labelName="message"
+          row={4}
+          required={true}
+        />
       </div>
       <div className="mb-8">
-        <SubmitButton name="Send" />
+        <Button displayName="Send" isDisabled={false} action={() => {}} />
       </div>
-    </>
+    </form>
   )
 }

@@ -1,6 +1,6 @@
 import { NavigationItem } from '@/components/atoms/NavigationItem'
 import { HamburgerButton } from '@/components/molecules/HamburgerButton'
-import { NavigationLogoLogo } from '@/components/molecules/NavigationLogo'
+import { NavigationLogo } from '@/components/molecules/NavigationLogo'
 import { useMobileMenuStore } from '@/stores/MobileMenuStore'
 import { Popover } from '@headlessui/react'
 
@@ -12,7 +12,7 @@ export const Navigation = ({ ...props }: NavigationProps) => {
   return (
     <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
       <div className="flex lg:flex-1">
-        <NavigationLogoLogo text="Bright Room" url="#" size="small" />
+        <NavigationLogo />
       </div>
       <div className="flex lg:hidden">
         <HamburgerButton text="Open main menu" action={() => open()} />

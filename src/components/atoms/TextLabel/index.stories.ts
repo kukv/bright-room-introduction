@@ -16,6 +16,7 @@ type Story = StoryObj<typeof meta>
 
 export const Template: Story = {
   args: {
-    title: 'example',
+    labelName: 'example',
+    required: true,
   },
 }

@@ -1,0 +1,14 @@
+.label_name {
+  display: block;
+  color: #ffffff;
+  padding-bottom: 10px;
+}
+
+.required_mark {
+  &::after {
+    content: " *required";
+    font-size: 12px;
+    color: red;
+    vertical-align: center;
+  }
+}
