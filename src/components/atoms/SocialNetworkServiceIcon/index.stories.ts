@@ -1,8 +1,8 @@
 import { Meta, StoryObj } from '@storybook/react'
-import { SocialNetworkServiceIcon } from '.'
+import { SocialNetworkServiceIcon } from './index'
 
 const meta = {
-  title: 'images/SocialNetworkServiceIcon',
+  title: 'atoms/SocialNetworkServiceIcon',
   component: SocialNetworkServiceIcon,
   parameters: {
     layout: 'centered',
@@ -16,8 +16,8 @@ type Story = StoryObj<typeof meta>
 
 export const Template: Story = {
   args: {
-    icon: 'x',
-    color: '#000000',
-    link: 'https://twitter.com/koki_nonaka',
+    iconType: 'x',
+    iconColor: '#000000',
+    externalLink: 'https://twitter.com/koki_nonaka',
   },
 }

@@ -1,21 +1,23 @@
 import { Meta, StoryObj } from '@storybook/react'
-import { Logo } from '@/components/images/Logo/index'
+import { TextField } from '.'
 
 const meta = {
-  title: 'images/Logo',
-  component: Logo,
+  title: 'atoms/TextField',
+  component: TextField,
   parameters: {
     layout: 'centered',
   },
   tags: ['autodocs'],
   argTypes: {},
-} satisfies Meta<typeof Logo>
+} satisfies Meta<typeof TextField>
 
 export default meta
 type Story = StoryObj<typeof meta>
 
 export const Template: Story = {
   args: {
-    size: 'small',
+    fieldId: 'example',
+    placeholder: 'test',
+    required: true,
   },
 }

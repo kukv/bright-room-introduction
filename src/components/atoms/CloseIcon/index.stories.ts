@@ -1,15 +1,15 @@
 import { Meta, StoryObj } from '@storybook/react'
-import { Bar3Icon } from '.'
+import { CloseIcon } from '.'
 
 const meta = {
-  title: 'images/Bar3Icon',
-  component: Bar3Icon,
+  title: 'atoms/CloseIcon',
+  component: CloseIcon,
   parameters: {
     layout: 'centered',
   },
   tags: ['autodocs'],
   argTypes: {},
-} satisfies Meta<typeof Bar3Icon>
+} satisfies Meta<typeof CloseIcon>
 
 export default meta
 type Story = StoryObj<typeof meta>

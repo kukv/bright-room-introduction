@@ -1,24 +1,21 @@
 import { Meta, StoryObj } from '@storybook/react'
-import { InputField } from '.'
+import { Button } from '.'
 
 const meta = {
-  title: 'atoms/InputField',
-  component: InputField,
+  title: 'atoms/Button',
+  component: Button,
   parameters: {
     layout: 'centered',
   },
   tags: ['autodocs'],
   argTypes: {},
-} satisfies Meta<typeof InputField>
+} satisfies Meta<typeof Button>
 
 export default meta
 type Story = StoryObj<typeof meta>
 
 export const Template: Story = {
   args: {
-    id: 'example',
-    type: 'text',
-    placeholder: 'test',
-    required: true,
+    displayName: 'submit',
   },
 }

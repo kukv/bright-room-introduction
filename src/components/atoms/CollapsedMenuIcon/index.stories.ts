@@ -1,21 +1,17 @@
 import { Meta, StoryObj } from '@storybook/react'
-import { SubmitButton } from '.'
+import { CollapsedMenuIcon } from './index'
 
 const meta = {
-  title: 'atoms/SubmitButton',
-  component: SubmitButton,
+  title: 'atoms/CollapsedMenuIcon',
+  component: CollapsedMenuIcon,
   parameters: {
     layout: 'centered',
   },
   tags: ['autodocs'],
   argTypes: {},
-} satisfies Meta<typeof SubmitButton>
+} satisfies Meta<typeof CollapsedMenuIcon>
 
 export default meta
 type Story = StoryObj<typeof meta>
 
-export const Template: Story = {
-  args: {
-    name: 'submit',
-  },
-}
+export const Template: Story = {}

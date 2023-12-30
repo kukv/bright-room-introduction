@@ -1,5 +1,3 @@
-import Link from 'next/link'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   IconDefinition,
   faSquareFacebook,
@@ -7,6 +5,8 @@ import {
   faSquareInstagram,
   faSquareXTwitter,
 } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Link from 'next/link'
 import styles from './index.module.scss'
 
 const IconType = {
@@ -17,7 +17,7 @@ const IconType = {
 } as const
 type IconType = (typeof IconType)[keyof typeof IconType]
 
-export const iconDefinition = (type: IconType): IconDefinition => {
+const iconSelector = (type: IconType): IconDefinition => {
   switch (type) {
     case IconType.X:
       return faSquareXTwitter
@@ -31,25 +31,24 @@ export const iconDefinition = (type: IconType): IconDefinition => {
 }
 
 interface SocialNetworkServiceIconIconProps {
-  icon: IconType
-  color: string
-  link: string
+  iconType: IconType
+  iconColor: string
+  externalLink: string
 }
 
 export const SocialNetworkServiceIcon = ({
-  icon,
-  color,
-  link,
-  ...props
+  iconType,
+  iconColor,
+  externalLink,
 }: SocialNetworkServiceIconIconProps) => {
   return (
-    <Link href={link} target="_blank" rel="noopener noreferrer">
+    <Link href={externalLink} target="_blank" rel="noopener noreferrer">
       <FontAwesomeIcon
-        className={styles.storybookSocial}
-        icon={iconDefinition(icon)}
+        className={`${styles.storybookSocial}`}
+        icon={iconSelector(iconType)}
         beat={true}
         size="3x"
-        color={color}
+        color={iconColor}
       />
     </Link>
   )

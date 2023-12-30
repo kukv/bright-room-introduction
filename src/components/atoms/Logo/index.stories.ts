@@ -1,17 +1,21 @@
+import { Logo } from '@/components/atoms/Logo/index'
 import { Meta, StoryObj } from '@storybook/react'
-import { ProfileImage } from '.'
 
 const meta = {
-  title: 'images/ProfileImage',
-  component: ProfileImage,
+  title: 'atoms/Logo',
+  component: Logo,
   parameters: {
     layout: 'centered',
   },
   tags: ['autodocs'],
   argTypes: {},
-} satisfies Meta<typeof ProfileImage>
+} satisfies Meta<typeof Logo>
 
 export default meta
 type Story = StoryObj<typeof meta>
 
-export const Template: Story = {}
+export const Template: Story = {
+  args: {
+    logoSize: 'small',
+  },
+}

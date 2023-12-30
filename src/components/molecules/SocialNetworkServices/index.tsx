@@ -1,4 +1,5 @@
-import { SocialNetworkServiceIcon } from '@/components/images/SocialNetworkServiceIcon'
+import { SocialNetworkServiceIcon } from '@/components/atoms/SocialNetworkServiceIcon'
+import styles from './index.module.scss'
 
 interface SocialNetworkServicesProps {
   iconColor: string
@@ -6,36 +7,35 @@ interface SocialNetworkServicesProps {
 
 export const SocialNetworkServices = ({
   iconColor,
-  ...props
 }: SocialNetworkServicesProps) => {
   return (
     <>
-      <span className="mx-5">
+      <span className={`${styles.sns_icons}`}>
         <SocialNetworkServiceIcon
-          icon="x"
-          color={iconColor}
-          link="https://x.com/koki_nonaka"
+          iconType="x"
+          iconColor={iconColor}
+          externalLink="https://x.com/koki_nonaka"
         />
       </span>
-      <span className="mx-5">
+      <span className={`${styles.sns_icons}`}>
         <SocialNetworkServiceIcon
-          icon="instagram"
-          color={iconColor}
-          link="https://instagram.com/kukv"
+          iconType="instagram"
+          iconColor={iconColor}
+          externalLink="https://instagram.com/kukv"
         />
       </span>
-      <span className="mx-5">
+      <span className={`${styles.sns_icons}`}>
         <SocialNetworkServiceIcon
-          icon="facebook"
-          color={iconColor}
-          link="https://facebook.com/04x17"
+          iconType="facebook"
+          iconColor={iconColor}
+          externalLink="https://facebook.com/04x17"
         />
       </span>
-      <span className="mx-5">
+      <span className={`${styles.sns_icons}`}>
         <SocialNetworkServiceIcon
-          icon="github"
-          color={iconColor}
-          link="https://github.com/kukv"
+          iconType="github"
+          iconColor={iconColor}
+          externalLink="https://github.com/kukv"
         />
       </span>
     </>

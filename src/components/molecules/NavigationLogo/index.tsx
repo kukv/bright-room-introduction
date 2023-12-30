@@ -1,22 +1,12 @@
+import { Logo } from '@/components/atoms/Logo'
 import { ScreenReaderOnlyText } from '@/components/atoms/ScreenReaderOnlyText'
-import { Logo, Size } from '@/components/images/Logo'
+import styles from './index.module.scss'
 
-interface NavigationLogoProps {
-  text: string
-  url: string
-  size: Size
-}
-
-export const NavigationLogoLogo = ({
-  text,
-  url,
-  size,
-  ...props
-}: NavigationLogoProps) => {
+export const NavigationLogo = () => {
   return (
-    <a href={url} className="-m-1.5 p-1.5">
-      <ScreenReaderOnlyText text={text} />
-      <Logo size={size} />
+    <a href="#" className={`${styles.navigation_logo}`}>
+      <ScreenReaderOnlyText readerOnlyText="Bright Room" />
+      <Logo logoSize="small" />
     </a>
   )
 }
