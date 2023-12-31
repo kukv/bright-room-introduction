@@ -1,9 +1,7 @@
 import { Copyright } from '@/components/atoms/Copyright'
 import { SocialNetworkServices } from '../../molecules/SocialNetworkServices'
 
-interface FooterProps {}
-
-export const Footer = ({ ...props }: FooterProps) => {
+export const Footer = () => {
   return (
     <footer className="flex flex-col items-center bg-neutral-600 text-center text-white">
       <div className="container pt-9">
