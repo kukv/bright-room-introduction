@@ -18,7 +18,7 @@ export const Navigation = () => {
           action={() => open()}
         />
       </div>
-      <div className="hidden lg:flex lg:gap-x-12">
+      <div className="hidden lg:flex lg:gap-x-10">
         <SectionLink isMobile={false} />
       </div>
       <div className="hidden lg:flex lg:flex-1 lg:justify-end">
