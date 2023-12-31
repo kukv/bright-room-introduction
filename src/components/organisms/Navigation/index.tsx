@@ -4,9 +4,7 @@ import { useMobileMenuStore } from '@/stores/MobileMenuStore'
 import { Popover } from '@headlessui/react'
 import { CollapsedMenuButton } from 'src/components/molecules/CollapsedMenuButton'
 
-interface NavigationProps {}
-
-export const Navigation = ({ ...props }: NavigationProps) => {
+export const Navigation = () => {
   const { open } = useMobileMenuStore()
 
   return (
