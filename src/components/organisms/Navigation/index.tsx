@@ -1,12 +1,14 @@
 import { NavigationItem } from '@/components/atoms/NavigationItem'
 import { NavigationLogo } from '@/components/molecules/NavigationLogo'
 import { SectionLink } from '@/components/molecules/SectionLinks'
-import { useMobileMenuStore } from '@/stores/MobileMenuStore'
+import { MouseEventHandler } from 'react'
 import { CollapsedMenuButton } from 'src/components/molecules/CollapsedMenuButton'
 
-export const Navigation = () => {
-  const { open } = useMobileMenuStore()
+interface NavigationProps {
+  collapsedAction: MouseEventHandler<HTMLButtonElement> | undefined
+}
 
+export const Navigation = ({ collapsedAction }: NavigationProps) => {
   return (
     <nav className="flex flex-row mx-auto max-w-7xl items-center justify-between p-6 lg:px-8">
       <div className="flex lg:flex-1">
@@ -15,7 +17,7 @@ export const Navigation = () => {
       <div className="flex lg:hidden">
         <CollapsedMenuButton
           readerOnlyText="Open side menu"
-          action={() => open()}
+          action={collapsedAction}
         />
       </div>
       <div className="hidden lg:flex lg:gap-x-10">
