@@ -4,7 +4,7 @@ import { LabeledTextField } from '@/components/molecules/LabeledTextField'
 
 export const ContactForm = () => {
   return (
-    <form className="container px-16 lg:px-36">
+    <form>
       <div className="mb-8">
         <LabeledTextField
           fieldId="name"

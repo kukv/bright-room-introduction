@@ -13,7 +13,9 @@ export const Contact = ({ ...props }: ContactProps) => {
             Feel free to contact me for any work or suggestions below.
           </p>
         </div>
-        <ContactForm />
+        <div className="container px-8 lg:px-36">
+          <ContactForm />
+        </div>
       </div>
     </section>
   )
