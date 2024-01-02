@@ -1,15 +1,15 @@
-import { CloseButton } from '@/components/molecules/CloseButton/index'
+import { CollapsedMenuButton } from '@/components/molecules/CollapsedMenuButton/index'
 import { Meta, StoryObj } from '@storybook/react'
 
 const meta = {
-  title: 'molecules/CloseButton',
-  component: CloseButton,
+  title: 'molecules/CollapsedMenuButton',
+  component: CollapsedMenuButton,
   parameters: {
     layout: 'centered',
   },
   tags: ['autodocs'],
   argTypes: {},
-} satisfies Meta<typeof CloseButton>
+} satisfies Meta<typeof CollapsedMenuButton>
 
 export default meta
 type Story = StoryObj<typeof meta>

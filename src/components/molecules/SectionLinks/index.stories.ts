@@ -1,22 +1,21 @@
-import { CloseButton } from '@/components/molecules/CloseButton/index'
 import { Meta, StoryObj } from '@storybook/react'
+import { SectionLink } from './index'
 
 const meta = {
-  title: 'molecules/CloseButton',
-  component: CloseButton,
+  title: 'molecules/SectionLink',
+  component: SectionLink,
   parameters: {
     layout: 'centered',
   },
   tags: ['autodocs'],
   argTypes: {},
-} satisfies Meta<typeof CloseButton>
+} satisfies Meta<typeof SectionLink>
 
 export default meta
 type Story = StoryObj<typeof meta>
 
 export const Template: Story = {
   args: {
-    readerOnlyText: 'Bright Room',
-    action: () => {},
+    isMobile: false,
   },
 }

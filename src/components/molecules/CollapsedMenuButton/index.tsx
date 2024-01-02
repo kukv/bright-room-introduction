@@ -1,20 +1,24 @@
 import { CollapsedMenuIcon } from '@/components/atoms/CollapsedMenuIcon'
 import { ScreenReaderOnlyText } from '@/components/atoms/ScreenReaderOnlyText'
 import { MouseEventHandler } from 'react'
+import styles from './index.module.scss'
 
-interface HamburgerButtonProps {
-  text: string
+interface CollapsedMenuButtonProps {
+  readerOnlyText: string
   action: MouseEventHandler<HTMLButtonElement> | undefined
 }
 
-export const HamburgerButton = ({ text, action }: HamburgerButtonProps) => {
+export const CollapsedMenuButton = ({
+  readerOnlyText,
+  action,
+}: CollapsedMenuButtonProps) => {
   return (
     <button
       type="button"
-      className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+      className={`${styles.button_style} `}
       onClick={action}
     >
-      <ScreenReaderOnlyText readerOnlyText={text} />
+      <ScreenReaderOnlyText readerOnlyText={readerOnlyText} />
       <CollapsedMenuIcon />
     </button>
   )

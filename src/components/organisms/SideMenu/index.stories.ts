@@ -1,22 +1,22 @@
-import { CloseButton } from '@/components/molecules/CloseButton/index'
 import { Meta, StoryObj } from '@storybook/react'
+import { SideMenu } from '.'
 
 const meta = {
-  title: 'molecules/CloseButton',
-  component: CloseButton,
+  title: 'organisms/SideMenu',
+  component: SideMenu,
   parameters: {
     layout: 'centered',
   },
   tags: ['autodocs'],
   argTypes: {},
-} satisfies Meta<typeof CloseButton>
+} satisfies Meta<typeof SideMenu>
 
 export default meta
 type Story = StoryObj<typeof meta>
 
 export const Template: Story = {
   args: {
-    readerOnlyText: 'Bright Room',
-    action: () => {},
+    isOpen: true,
+    closingAction: () => 1,
   },
 }
