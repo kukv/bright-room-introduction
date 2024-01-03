@@ -23,6 +23,7 @@
 *.iml
 .DS_Store
 *.pem
+*-version
 
 # debug
 npm-debug.log*
