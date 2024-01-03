@@ -12,7 +12,7 @@ const TechnologicalDomainIconType = {
   Backend: 'backend',
   Infrastructure: 'infrastructure',
 } as const
-type TechnologicalDomainIconType =
+export type TechnologicalDomainIconType =
   (typeof TechnologicalDomainIconType)[keyof typeof TechnologicalDomainIconType]
 
 const iconSelector = (type: TechnologicalDomainIconType): IconDefinition => {
