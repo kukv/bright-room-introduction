@@ -1,9 +1,4 @@
-import {
-  faLaptopCode,
-  faNetworkWired,
-  faServer,
-} from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { TechnologicalDomainIcon } from '@/components/atoms/TechnologicalDomainIcon'
 
 interface SkillsProps {}
 
@@ -18,8 +13,8 @@ export const Skills = ({ ...props }: SkillsProps) => {
       </div>
       <div className="grid grid-rows-3 items-center justify-center gap-y-20 pt-24 lg:grid-cols-3 lg:grid-rows-none lg:gap-y-0 lg:py-24">
         <div className="relative mx-4 flex flex-col rounded-xl bg-white px-10 pt-20 shadow-md">
-          <span className="absolute left-1/2 top-[-48px] flex h-24 w-24 -translate-x-1/2 transform items-center justify-center rounded-full bg-black">
-            <FontAwesomeIcon icon={faLaptopCode} size="3x" color="#FFFFFF" />
+          <span className="absolute left-1/2 top-[-48px] -translate-x-1/2 transform">
+            <TechnologicalDomainIcon iconType="frontend" />
           </span>
           <h3 className="text-center">Frontend</h3>
           <p className="whitespace-pre-wrap break-words pb-8">
@@ -33,8 +28,8 @@ export const Skills = ({ ...props }: SkillsProps) => {
           </p>
         </div>
         <div className="relative mx-4 flex flex-col rounded-xl bg-white px-10 pt-20 shadow-md">
-          <span className="absolute left-1/2 top-[-48px] flex h-24 w-24 -translate-x-1/2 transform items-center justify-center rounded-full bg-black">
-            <FontAwesomeIcon icon={faServer} size="3x" color="#FFFFFF" />
+          <span className="absolute left-1/2 top-[-48px] -translate-x-1/2 transform">
+            <TechnologicalDomainIcon iconType="backend" />
           </span>
           <h3 className="text-center">Backend</h3>
           <p className="whitespace-pre-wrap break-words pb-8">
@@ -47,8 +42,8 @@ export const Skills = ({ ...props }: SkillsProps) => {
           </p>
         </div>
         <div className="relative mx-4 flex flex-col rounded-xl bg-white px-10 pt-20 shadow-md">
-          <span className="absolute left-1/2 top-[-48px] flex h-24 w-24 -translate-x-1/2 transform items-center justify-center rounded-full bg-black">
-            <FontAwesomeIcon icon={faNetworkWired} size="3x" color="#FFFFFF" />
+          <span className="absolute left-1/2 top-[-48px] -translate-x-1/2 transform">
+            <TechnologicalDomainIcon iconType="infrastructure" />
           </span>
           <h3 className="text-center">Infrastructure</h3>
           <p className="whitespace-pre-wrap break-words pb-8">
