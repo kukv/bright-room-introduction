@@ -24,11 +24,11 @@ export const Skills = ({ ...props }: SkillsProps) => {
           <h3 className="text-center">Frontend</h3>
           <p className="whitespace-pre-wrap break-words pb-8">
             {`
-✓ React/Redux/Angular
-✓ Javascript
+✓ Typescript/Javascript
 ✓ Node.js
-✓ Webpack/Gulp/Grunt
-✓ HTML/CSS/SASS/LESS
+✓ React
+✓ Next.js
+✓ HTML/CSS/SASS
             `}
           </p>
         </div>
@@ -39,11 +39,10 @@ export const Skills = ({ ...props }: SkillsProps) => {
           <h3 className="text-center">Backend</h3>
           <p className="whitespace-pre-wrap break-words pb-8">
             {`
-✓ React/Redux/Angular
-✓ Javascript
-✓ Node.js
-✓ Webpack/Gulp/Grunt
-✓ HTML/CSS/SASS/LESS
+✓ Java/Kotlin
+✓ Gradle/Kotlin Gradle DSL
+✓ SpringBoot/ktor
+✓ Mybatis/Exposed
             `}
           </p>
         </div>
@@ -54,11 +53,7 @@ export const Skills = ({ ...props }: SkillsProps) => {
           <h3 className="text-center">Infrastructure</h3>
           <p className="whitespace-pre-wrap break-words pb-8">
             {`
-✓ React/Redux/Angular
-✓ Javascript
-✓ Node.js
-✓ Webpack/Gulp/Grunt
-✓ HTML/CSS/SASS/LESS
+coming soon...
             `}
           </p>
         </div>
