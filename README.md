@@ -67,14 +67,16 @@ npm run tsm
 
 I am not very bright in front-end technology, so I taught myself from scratch.
 
-If you have any feedback or bugs about this repository of mine, please read and contribute to [CodingGuideline](docs/CodingGuideline.md) and [CONTRIBUTING](docs/CONTRIBUTING.md).
+If you have any feedback or bugs about this repository of mine, please read and contribute to [CONTRIBUTING](docs/CONTRIBUTING.md).
 
 You are welcome.
 Let's learn together!!
 
 ## License 📜
 
-[License](LICENSE)
+bright-room-introduction is provided under the MIT [License](LICENSE).
+
+Copyright (c) 2023 kukv.
 
 ## Forking Guidelines 🚨
 
