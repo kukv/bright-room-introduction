@@ -1,8 +1,6 @@
 import styles from './index.module.scss'
 
-interface ResumeProps {}
-
-export const Resume = ({ ...props }: ResumeProps) => {
+export const Resume = () => {
   return (
     <section id="resume" className="px-20 py-20 lg:px-40 lg:py-20">
       <div className="mx-4 flex flex-col items-center justify-center">
