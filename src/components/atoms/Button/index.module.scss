@@ -1,9 +1,9 @@
 @use "src/styles/breakpoints" as breakpoints;
 
 .button_layout {
-  width: 100%;
+  width: auto;
   @include breakpoints.media(sm) {
-    width: auto;
+    width: 100%;
   }
 
   padding: 10px 20px;

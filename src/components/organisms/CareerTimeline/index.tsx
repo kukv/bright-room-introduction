@@ -19,8 +19,8 @@ const TimelineItem = ({
         <span className={styles.time_day}>{day}</span>
         <span className={styles.time_month}>{month}</span>
       </div>
-      <div className={styles.desc}>
-        <p className={styles.flag}>{title}</p>
+      <div className={styles.description}>
+        <p className={styles.title}>{title}</p>
         {description}
       </div>
     </div>
@@ -43,13 +43,13 @@ const TimelineGroup = ({ year, items }: TimelineGroupProps) => {
   )
 }
 
-export interface CareerTimelineProps {
+interface CareerTimelineProps {
   careers: Array<TimelineGroupProps>
 }
 
 export const CareerTimeline = ({ careers }: CareerTimelineProps) => {
   return (
-    <div className={styles.cp_timeline03}>
+    <div className={styles.timeline_layout}>
       {careers.map((career: TimelineGroupProps) => (
         <TimelineGroup key={career.year} {...career} />
       ))}
