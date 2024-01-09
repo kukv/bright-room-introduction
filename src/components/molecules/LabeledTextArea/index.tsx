@@ -16,7 +16,7 @@ export const LabeledTextArea = ({
 }: LabeledTextAreaProps) => {
   return (
     <>
-      <TextLabel labelName={labelName} required={required} />
+      <TextLabel labelName={labelName} color="#FFFFFF" required={required} />
       <TextAreaField fieldId={fieldId} row={row} required={required} />
     </>
   )

@@ -2,7 +2,7 @@ import { Meta, StoryObj } from '@storybook/react'
 import { Button } from '.'
 
 const meta = {
-  title: 'atoms/Button',
+  title: 'components/atoms/Button',
   component: Button,
   parameters: {
     layout: 'centered',
@@ -16,6 +16,6 @@ type Story = StoryObj<typeof meta>
 
 export const Template: Story = {
   args: {
-    displayName: 'submit',
+    children: 'Example',
   },
 }

@@ -2,7 +2,7 @@ import { Meta, StoryObj } from '@storybook/react'
 import { CloseIcon } from '.'
 
 const meta = {
-  title: 'atoms/CloseIcon',
+  title: 'components/atoms/CloseIcon',
   component: CloseIcon,
   parameters: {
     layout: 'centered',

@@ -2,7 +2,7 @@ import { Meta, StoryObj } from '@storybook/react'
 import { SectionLink } from './index'
 
 const meta = {
-  title: 'molecules/SectionLink',
+  title: 'components/molecules/SectionLink',
   component: SectionLink,
   parameters: {
     layout: 'centered',

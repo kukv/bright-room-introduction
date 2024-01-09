@@ -24,7 +24,9 @@ export const Navigation = ({ collapsedAction }: NavigationProps) => {
         <SectionLink isMobile={false} />
       </div>
       <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-        <NavigationItem title="Blog &rarr;" url="#" mobile={false} />
+        <NavigationItem url="#" mobile={false}>
+          Blog &rarr;
+        </NavigationItem>
       </div>
     </nav>
   )

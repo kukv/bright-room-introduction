@@ -9,7 +9,7 @@ export const ScreenReaderOnlyText = ({
 }: ScreenReaderOnlyTextProps) => {
   return (
     <>
-      <span className={`${styles.sr_only}`}>{readerOnlyText}</span>
+      <span className={styles['br-sr-only']}>{readerOnlyText}</span>
     </>
   )
 }

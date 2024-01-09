@@ -16,12 +16,16 @@ export const TechnologicalDomain = ({
   stackData,
 }: TechnologicalDomainProps) => {
   return (
-    <div className={`${styles.card}`}>
-      <div className={`${styles.icon}`}>
-        <TechnologicalDomainIcon iconType={iconType} />
+    <div className={styles['br-technological-domain--card']}>
+      <div className={styles['br-technological-domain--icon']}>
+        <TechnologicalDomainIcon type={iconType} />
       </div>
-      <h3 className={`${styles.domain_title}`}>{domainName}</h3>
-      <p className={`${styles.technology_stack}`}>{stackData}</p>
+      <h3 className={styles['br-technological-domain--domain-title']}>
+        {domainName}
+      </h3>
+      <p className={styles['br-technological-domain--technology-stack']}>
+        {stackData}
+      </p>
     </div>
   )
 }

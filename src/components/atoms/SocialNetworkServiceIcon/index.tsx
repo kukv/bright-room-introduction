@@ -1,3 +1,4 @@
+import { SizeProp } from '@fortawesome/fontawesome-svg-core'
 import {
   IconDefinition,
   faSquareFacebook,
@@ -31,24 +32,26 @@ const iconSelector = (type: IconType): IconDefinition => {
 }
 
 interface SocialNetworkServiceIconIconProps {
-  iconType: IconType
-  iconColor: string
-  externalLink: string
+  type: IconType
+  color: string
+  size?: SizeProp
+  link: string
 }
 
 export const SocialNetworkServiceIcon = ({
-  iconType,
-  iconColor,
-  externalLink,
+  type,
+  color,
+  size = '3x',
+  link,
 }: SocialNetworkServiceIconIconProps) => {
   return (
-    <Link href={externalLink} target="_blank" rel="noopener noreferrer">
+    <Link href={link} target="_blank" rel="noopener noreferrer">
       <FontAwesomeIcon
-        className={`${styles.storybookSocial}`}
-        icon={iconSelector(iconType)}
+        className={styles['br-sns-icon']}
+        icon={iconSelector(type)}
         beat={true}
-        size="3x"
-        color={iconColor}
+        size={size}
+        color={color}
       />
     </Link>
   )

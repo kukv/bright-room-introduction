@@ -15,7 +15,7 @@ export const TextField = ({
     <input
       type="text"
       id={fieldId}
-      className={`${styles.text_field}`}
+      className={styles['br-text-field']}
       placeholder={placeholder}
       required={required}
     />

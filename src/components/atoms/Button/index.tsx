@@ -1,28 +1,31 @@
+import React from 'react'
 import styles from './index.module.scss'
 
 interface ButtonProps {
-  displayName: string
   isDisabled?: boolean
   action: () => void
+  children: React.ReactNode
 }
 
 export const Button = ({
-  displayName,
   isDisabled = false,
   action,
+  children,
+  ...props
 }: ButtonProps) => {
-  const buttonColor = isDisabled
-    ? styles.button_disabled_color
-    : styles.button_enabled_color
-
   return (
     <button
       type="submit"
-      className={`${styles.button_layout} ${buttonColor} ${styles.button_text}`}
+      className={`${styles['br-button']} ${
+        isDisabled
+          ? styles['br-button--disabled']
+          : styles['br-button--primary']
+      }`}
       disabled={isDisabled}
       formAction={action}
+      {...props}
     >
-      {displayName}
+      {children}
     </button>
   )
 }

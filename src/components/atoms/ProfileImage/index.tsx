@@ -6,7 +6,7 @@ export const ProfileImage = () => {
   return (
     <Image
       src={AboutProfileImage}
-      className={`${styles.profile_image_style}`}
+      className={styles['br-profile-image']}
       alt="ProfileImage"
     />
   )

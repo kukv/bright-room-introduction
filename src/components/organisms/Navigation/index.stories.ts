@@ -2,7 +2,7 @@ import { Meta, StoryObj } from '@storybook/react'
 import { Navigation } from '.'
 
 const meta = {
-  title: 'organisms/Navigation',
+  title: 'components/organisms/Navigation',
   component: Navigation,
   parameters: {
     layout: 'centered',

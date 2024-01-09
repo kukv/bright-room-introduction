@@ -2,7 +2,7 @@ import { Meta, StoryObj } from '@storybook/react'
 import { TextLabel } from '.'
 
 const meta = {
-  title: 'atoms/TextLabel',
+  title: 'components/atoms/TextLabel',
   component: TextLabel,
   parameters: {
     layout: 'centered',
