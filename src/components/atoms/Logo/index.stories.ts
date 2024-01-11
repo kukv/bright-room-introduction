@@ -2,7 +2,7 @@ import { Logo } from '@/components/atoms/Logo/index'
 import { Meta, StoryObj } from '@storybook/react'
 
 const meta = {
-  title: 'atoms/Logo',
+  title: 'components/atoms/Logo',
   component: Logo,
   parameters: {
     layout: 'centered',

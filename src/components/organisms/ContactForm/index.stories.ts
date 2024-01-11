@@ -2,7 +2,7 @@ import { Meta, StoryObj } from '@storybook/react'
 import { ContactForm } from '.'
 
 const meta = {
-  title: 'organisms/ContactForm',
+  title: 'components/organisms/ContactForm',
   component: ContactForm,
   parameters: {
     layout: 'centered',

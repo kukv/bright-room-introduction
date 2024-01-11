@@ -1,14 +1,13 @@
-.label_name {
+.br-text-label {
   display: block;
-  color: #ffffff;
   padding-bottom: 10px;
-}
 
-.required_mark {
-  &::after {
-    content: " *required";
-    font-size: 12px;
-    color: red;
-    vertical-align: center;
+  &--required-mark {
+    &::after {
+      content: " *required";
+      font-size: 12px;
+      color: red;
+      vertical-align: center;
+    }
   }
 }

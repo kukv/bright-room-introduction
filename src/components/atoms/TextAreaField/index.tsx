@@ -16,7 +16,7 @@ export const TextAreaField = ({
       id={fieldId}
       rows={row}
       required={required}
-      className={`${styles.text_area_field}`}
+      className={styles['br-text-area-field']}
     />
   )
 }

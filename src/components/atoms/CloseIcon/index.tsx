@@ -8,7 +8,7 @@ export const CloseIcon = () => {
       viewBox="0 0 24 24"
       strokeWidth={1.5}
       stroke="currentColor"
-      className={`${styles.icon_size}`}
+      className={styles['br-close-icon']}
     >
       <path
         strokeLinecap="round"

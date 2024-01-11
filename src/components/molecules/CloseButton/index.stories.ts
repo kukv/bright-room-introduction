@@ -2,7 +2,7 @@ import { CloseButton } from '@/components/molecules/CloseButton/index'
 import { Meta, StoryObj } from '@storybook/react'
 
 const meta = {
-  title: 'molecules/CloseButton',
+  title: 'components/molecules/CloseButton',
   component: CloseButton,
   parameters: {
     layout: 'centered',

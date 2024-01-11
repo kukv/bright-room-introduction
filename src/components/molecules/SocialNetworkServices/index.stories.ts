@@ -2,7 +2,7 @@ import { Meta, StoryObj } from '@storybook/react'
 import { SocialNetworkServices } from '.'
 
 const meta = {
-  title: 'molecules/SocialNetworkServices',
+  title: 'components/molecules/SocialNetworkServices',
   component: SocialNetworkServices,
   parameters: {
     layout: 'centered',
