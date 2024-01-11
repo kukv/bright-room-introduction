@@ -3,7 +3,7 @@ import styles from './index.module.scss'
 
 interface TextLabelProps {
   labelName: string
-  color: string
+  color?: string
   required?: boolean
 }
 
