@@ -10,7 +10,11 @@ interface CloseButtonProps {
 
 export const CloseButton = ({ readerOnlyText, action }: CloseButtonProps) => {
   return (
-    <button type="button" className={`${styles.button_style}`} onClick={action}>
+    <button
+      type="button"
+      className={styles['br-close-button']}
+      onClick={action}
+    >
       <ScreenReaderOnlyText readerOnlyText={readerOnlyText} />
       <CloseIcon />
     </button>

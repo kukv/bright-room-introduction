@@ -2,7 +2,7 @@ import { Meta, StoryObj } from '@storybook/react'
 import { LabeledTextField } from './index'
 
 const meta = {
-  title: 'molecules/LabeledTextField',
+  title: 'components/molecules/LabeledTextField',
   component: LabeledTextField,
   parameters: {
     layout: 'centered',

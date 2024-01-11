@@ -27,19 +27,15 @@ const iconSelector = (type: TechnologicalDomainIconType): IconDefinition => {
 }
 
 interface TechnologicalDomainIconProps {
-  iconType: TechnologicalDomainIconType
+  type: TechnologicalDomainIconType
 }
 
 export const TechnologicalDomainIcon = ({
-  iconType,
+  type,
 }: TechnologicalDomainIconProps) => {
   return (
-    <span className={`${styles.icon_circle}`}>
-      <FontAwesomeIcon
-        icon={iconSelector(iconType)}
-        size="3x"
-        color="#FFFFFF"
-      />
+    <span className={styles['br-tech-domain-icon--circle']}>
+      <FontAwesomeIcon icon={iconSelector(type)} size="3x" color="#FFFFFF" />
     </span>
   )
 }

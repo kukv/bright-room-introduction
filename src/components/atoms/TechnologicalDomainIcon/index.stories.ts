@@ -2,7 +2,7 @@ import { Meta, StoryObj } from '@storybook/react'
 import { TechnologicalDomainIcon } from './index'
 
 const meta = {
-  title: 'atoms/TechnologicalDomainIcon',
+  title: 'components/atoms/TechnologicalDomainIcon',
   component: TechnologicalDomainIcon,
   parameters: {
     layout: 'centered',
@@ -16,6 +16,6 @@ type Story = StoryObj<typeof meta>
 
 export const Template: Story = {
   args: {
-    iconType: 'frontend',
+    type: 'frontend',
   },
 }

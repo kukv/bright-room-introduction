@@ -7,12 +7,24 @@ interface SectionLinksProps {
 export const SectionLink = ({ isMobile }: SectionLinksProps) => {
   return (
     <>
-      <NavigationItem title="Home" url="#home" mobile={isMobile} />
-      <NavigationItem title="About" url="#about" mobile={isMobile} />
-      <NavigationItem title="Resume" url="#resume" mobile={isMobile} />
-      <NavigationItem title="Skills" url="#skills" mobile={isMobile} />
-      <NavigationItem title="Works" url="#works" mobile={isMobile} />
-      <NavigationItem title="Contact" url="#contact" mobile={isMobile} />
+      <NavigationItem url="#home" mobile={isMobile}>
+        Home
+      </NavigationItem>
+      <NavigationItem url="#about" mobile={isMobile}>
+        About
+      </NavigationItem>
+      <NavigationItem url="#resume" mobile={isMobile}>
+        Resume
+      </NavigationItem>
+      <NavigationItem url="#skills" mobile={isMobile}>
+        Skills
+      </NavigationItem>
+      <NavigationItem url="#works" mobile={isMobile}>
+        Works
+      </NavigationItem>
+      <NavigationItem url="#contact" mobile={isMobile}>
+        Contact
+      </NavigationItem>
     </>
   )
 }

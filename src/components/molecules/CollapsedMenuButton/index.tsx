@@ -15,7 +15,7 @@ export const CollapsedMenuButton = ({
   return (
     <button
       type="button"
-      className={`${styles.button_style} `}
+      className={styles['br-collapsed-menu-button']}
       onClick={action}
     >
       <ScreenReaderOnlyText readerOnlyText={readerOnlyText} />

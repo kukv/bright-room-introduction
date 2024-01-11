@@ -2,7 +2,7 @@ import { Meta, StoryObj } from '@storybook/react'
 import { ScreenReaderOnlyText } from '.'
 
 const meta = {
-  title: 'atoms/ScreenReaderOnlyText',
+  title: 'components/atoms/ScreenReaderOnlyText',
   component: ScreenReaderOnlyText,
   parameters: {
     layout: 'centered',

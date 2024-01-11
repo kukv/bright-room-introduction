@@ -2,7 +2,7 @@ import { Meta, StoryObj } from '@storybook/react'
 import { SideMenu } from '.'
 
 const meta = {
-  title: 'organisms/SideMenu',
+  title: 'components/organisms/SideMenu',
   component: SideMenu,
   parameters: {
     layout: 'centered',

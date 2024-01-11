@@ -2,7 +2,7 @@ import { Meta, StoryObj } from '@storybook/react'
 import { TechnologicalDomain } from './index'
 
 const meta = {
-  title: 'molecules/TechnologicalDomain',
+  title: 'components/molecules/TechnologicalDomain',
   component: TechnologicalDomain,
   parameters: {
     layout: 'centered',

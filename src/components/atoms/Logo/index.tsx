@@ -11,15 +11,13 @@ type LogoSize = (typeof LogoSize)[keyof typeof LogoSize]
 
 interface LogoProps {
   logoSize: LogoSize
-  additionalClass?: string
 }
 
-export const Logo = ({ logoSize, additionalClass = '' }: LogoProps) => {
-  const imageSize = styles[`image_size_${logoSize}`]
+export const Logo = ({ logoSize }: LogoProps) => {
   return (
     <Image
       src={LogoImage}
-      className={`${imageSize} ${additionalClass}`}
+      className={styles[`br-logo--size-${logoSize}`]}
       alt="Logo"
     />
   )

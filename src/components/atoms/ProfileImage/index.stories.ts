@@ -2,7 +2,7 @@ import { Meta, StoryObj } from '@storybook/react'
 import { ProfileImage } from './index'
 
 const meta = {
-  title: 'atoms/ProfileImage',
+  title: 'components/atoms/ProfileImage',
   component: ProfileImage,
   parameters: {
     layout: 'centered',

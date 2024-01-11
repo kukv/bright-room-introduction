@@ -2,7 +2,7 @@ import { Meta, StoryObj } from '@storybook/react'
 import { Footer } from '.'
 
 const meta = {
-  title: 'organisms/Footer',
+  title: 'components/organisms/Footer',
   component: Footer,
   parameters: {
     layout: 'centered',

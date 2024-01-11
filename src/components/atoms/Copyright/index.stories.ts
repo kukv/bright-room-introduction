@@ -2,7 +2,7 @@ import { Meta, StoryObj } from '@storybook/react'
 import { Copyright } from '.'
 
 const meta = {
-  title: 'atoms/Copyright',
+  title: 'components/atoms/Copyright',
   component: Copyright,
   parameters: {
     layout: 'centered',

@@ -2,7 +2,7 @@ import { Meta, StoryObj } from '@storybook/react'
 import { NavigationItem } from '.'
 
 const meta = {
-  title: 'atoms/NavigationItem',
+  title: 'components/atoms/NavigationItem',
   component: NavigationItem,
   parameters: {
     layout: 'centered',
@@ -16,8 +16,8 @@ type Story = StoryObj<typeof meta>
 
 export const Template: Story = {
   args: {
-    title: 'Home',
     url: '#',
     mobile: false,
+    children: 'Home',
   },
 }

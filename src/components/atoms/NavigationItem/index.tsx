@@ -1,20 +1,27 @@
+import React from 'react'
 import styles from './index.module.scss'
 
 interface NavigationItemProps {
-  title: string
   url: string
   mobile: boolean
+  children: React.ReactNode
 }
 
-export const NavigationItem = ({ title, url, mobile }: NavigationItemProps) => {
+export const NavigationItem = ({
+  url,
+  mobile,
+  children,
+}: NavigationItemProps) => {
   return (
     <a
       href={url}
-      className={`${styles.text_style_default} ${
-        mobile ? styles.text_style_mobile : styles.text_style_pc
+      className={`${styles['br-navigation-item']} ${
+        mobile
+          ? styles['br-navigation-item--mobile']
+          : styles['br-navigation-item--pc']
       }`}
     >
-      {title}
+      {children}
     </a>
   )
 }

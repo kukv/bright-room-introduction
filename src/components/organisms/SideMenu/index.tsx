@@ -30,7 +30,9 @@ export const SideMenu = ({ isOpen, closingAction }: SideMenuProps) => {
             <div className="space-y-2 py-6">
               <SectionLink isMobile={true} />
               <div className="py-6">
-                <NavigationItem title="Blog &rarr;" url="#" mobile={true} />
+                <NavigationItem url="#" mobile={true}>
+                  Blog &rarr;
+                </NavigationItem>
               </div>
             </div>
           </div>

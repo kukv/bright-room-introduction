@@ -2,7 +2,7 @@ import { Meta, StoryObj } from '@storybook/react'
 import { CareerTimeline } from '.'
 
 const meta = {
-  title: 'organisms/CareerTimeline',
+  title: 'components/organisms/CareerTimeline',
   component: CareerTimeline,
   parameters: {
     layout: 'centered',

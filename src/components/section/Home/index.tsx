@@ -29,8 +29,8 @@ export const Home = ({ ...props }: HomeProps) => {
       <SideMenu isOpen={isOpen} closingAction={close} />
       <div className="flex w-full flex-col">
         <div className="mx-auto max-w-7xl pb-16 pt-40 text-center sm:px-6 lg:px-8 lg:pt-40">
-          <div className="flex justify-center">
-            <Logo logoSize="medium" additionalClass="mb-5" />
+          <div className="flex justify-center mb-5">
+            <Logo logoSize="medium" />
           </div>
           <div className="flex justify-center">
             <h1 className="mb-10 text-4xl font-bold">Bright Room</h1>
