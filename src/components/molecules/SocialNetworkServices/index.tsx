@@ -10,32 +10,32 @@ export const SocialNetworkServices = ({
 }: SocialNetworkServicesProps) => {
   return (
     <>
-      <span className={`${styles.sns_icons}`}>
+      <span className={styles['br-sns-icons']}>
         <SocialNetworkServiceIcon
-          iconType="x"
-          iconColor={iconColor}
-          externalLink="https://x.com/koki_nonaka"
+          type="x"
+          color={iconColor}
+          link="https://x.com/koki_nonaka"
         />
       </span>
-      <span className={`${styles.sns_icons}`}>
+      <span className={styles['br-sns-icons']}>
         <SocialNetworkServiceIcon
-          iconType="instagram"
-          iconColor={iconColor}
-          externalLink="https://instagram.com/kukv"
+          type="instagram"
+          color={iconColor}
+          link="https://instagram.com/kukv"
         />
       </span>
-      <span className={`${styles.sns_icons}`}>
+      <span className={styles['br-sns-icons']}>
         <SocialNetworkServiceIcon
-          iconType="facebook"
-          iconColor={iconColor}
-          externalLink="https://facebook.com/04x17"
+          type="facebook"
+          color={iconColor}
+          link="https://facebook.com/04x17"
         />
       </span>
-      <span className={`${styles.sns_icons}`}>
+      <span className={styles['br-sns-icons']}>
         <SocialNetworkServiceIcon
-          iconType="github"
-          iconColor={iconColor}
-          externalLink="https://github.com/kukv"
+          type="github"
+          color={iconColor}
+          link="https://github.com/kukv"
         />
       </span>
     </>

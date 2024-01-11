@@ -16,7 +16,7 @@ export const LabeledTextField = ({
 }: LabeledTextFieldProps) => {
   return (
     <>
-      <TextLabel labelName={labelName} required={required} />
+      <TextLabel labelName={labelName} color="#FFFFFF" required={required} />
       <TextField
         fieldId={fieldId}
         placeholder={placeholder}

@@ -1,23 +1,22 @@
-.text_style_default {
+.br-navigation-item {
   color: #111827ff;
   font-weight: 600;
-}
+  &--pc {
+    font-size: 14px;
+    line-height: 24px;
+    padding: 0 5px;
+  }
 
-.text_style_pc {
-  font-size: 14px;
-  line-height: 24px;
-  padding: 0 5px;
-}
+  &--mobile {
+    display: block;
+    padding: 8px 12px;
+    margin: 0 12px;
+    line-height: 28px;
+    border-radius: 8px;
+    font-size: 16px;
 
-.text_style_mobile {
-  display: block;
-  padding: 8px 12px;
-  margin: 0 12px;
-  line-height: 28px;
-  border-radius: 8px;
-  font-size: 16px;
-
-  &:hover {
-    background-color: #f3f4f6;
+    &:hover {
+      background-color: #f3f4f6;
+    }
   }
 }

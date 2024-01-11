@@ -1,14 +1,14 @@
-.image_size_small {
-  height: 40px;
-  width: auto;
-}
-
-.image_size_medium {
-  height: 144px;
-  width: auto;
-}
-
-.image_size_large {
-  height: max-content;
-  width: auto;
+.br-logo {
+  &--size-small {
+    height: 40px;
+    width: auto;
+  }
+  &--size-medium {
+    height: 144px;
+    width: auto;
+  }
+  &--size-large {
+    height: max-content;
+    width: auto;
+  }
 }

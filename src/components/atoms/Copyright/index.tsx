@@ -12,17 +12,19 @@ export const Copyright = ({
   holderWebsiteLink,
 }: CopyrightProps) => {
   return (
-    <p className={styles.text_color}>
+    <p className={styles['br-copyright--text-color']}>
       {`© ${publicationYear}`}
       <a
         target="_blank"
         rel="noopener noreferrer"
         href={holderWebsiteLink}
-        className={`${styles.text_color} ${styles.text_margin} ${styles.underline_hover_animation}`}
+        className={`${styles['br-copyright--text-color']} ${styles['br-copyright--text-margin']} ${styles['br-copyright--underline-animation']}`}
       >
         {holderName}
       </a>
-      <span className={`${styles.text_color}`}>All Rights Reserved</span>
+      <span className={styles['br-copyright--text-color']}>
+        All Rights Reserved
+      </span>
     </p>
   )
 }

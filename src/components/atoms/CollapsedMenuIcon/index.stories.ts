@@ -2,7 +2,7 @@ import { Meta, StoryObj } from '@storybook/react'
 import { CollapsedMenuIcon } from './index'
 
 const meta = {
-  title: 'atoms/CollapsedMenuIcon',
+  title: 'components/atoms/CollapsedMenuIcon',
   component: CollapsedMenuIcon,
   parameters: {
     layout: 'centered',

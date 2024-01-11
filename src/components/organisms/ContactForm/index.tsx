@@ -30,7 +30,9 @@ export const ContactForm = () => {
         />
       </div>
       <div className="mb-8">
-        <Button displayName="Send" isDisabled={false} action={() => {}} />
+        <Button isDisabled={false} action={() => {}}>
+          Send
+        </Button>
       </div>
     </form>
   )

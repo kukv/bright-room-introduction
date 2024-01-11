@@ -2,7 +2,7 @@ import { CollapsedMenuButton } from '@/components/molecules/CollapsedMenuButton/
 import { Meta, StoryObj } from '@storybook/react'
 
 const meta = {
-  title: 'molecules/CollapsedMenuButton',
+  title: 'components/molecules/CollapsedMenuButton',
   component: CollapsedMenuButton,
   parameters: {
     layout: 'centered',

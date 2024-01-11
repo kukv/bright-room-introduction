@@ -1,15 +1,15 @@
-import { NavigationLogo } from '@/components/molecules/NavigationLogo/index'
 import { Meta, StoryObj } from '@storybook/react'
+import { Home } from '.'
 
 const meta = {
-  title: 'components/molecules/NavigationLogo',
-  component: NavigationLogo,
+  title: 'components/section/Home',
+  component: Home,
   parameters: {
     layout: 'centered',
   },
   tags: ['autodocs'],
   argTypes: {},
-} satisfies Meta<typeof NavigationLogo>
+} satisfies Meta<typeof Home>
 
 export default meta
 type Story = StoryObj<typeof meta>
