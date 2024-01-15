@@ -3,13 +3,11 @@ import styles from './index.module.scss'
 
 interface ButtonProps {
   isDisabled?: boolean
-  action: () => void
   children: React.ReactNode
 }
 
 export const Button = ({
   isDisabled = false,
-  action,
   children,
   ...props
 }: ButtonProps) => {
@@ -22,7 +20,6 @@ export const Button = ({
           : styles['br-button--primary']
       }`}
       disabled={isDisabled}
-      formAction={action}
       {...props}
     >
       {children}
