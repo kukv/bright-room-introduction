@@ -1,3 +1,4 @@
+import { useFormContext } from 'react-hook-form'
 import styles from './index.module.scss'
 
 interface TextAreaFieldProps {
@@ -11,12 +12,15 @@ export const TextAreaField = ({
   row = 4,
   required = false,
 }: TextAreaFieldProps) => {
+  const { register } = useFormContext()
+
   return (
     <textarea
       id={fieldId}
       rows={row}
       required={required}
       className={styles['br-text-area-field']}
+      {...register(fieldId, { required })}
     />
   )
 }
