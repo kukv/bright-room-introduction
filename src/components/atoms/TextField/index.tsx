@@ -1,3 +1,4 @@
+import { useFormContext } from 'react-hook-form'
 import styles from './index.module.scss'
 
 interface TextFieldProps {
@@ -11,6 +12,8 @@ export const TextField = ({
   placeholder,
   required = false,
 }: TextFieldProps) => {
+  const { register } = useFormContext()
+
   return (
     <input
       type="text"
@@ -18,6 +21,7 @@ export const TextField = ({
       className={styles['br-text-field']}
       placeholder={placeholder}
       required={required}
+      {...register(fieldId, { required })}
     />
   )
 }
